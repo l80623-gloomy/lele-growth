@@ -23,8 +23,8 @@ npx --yes serve .
 | `02-fullmoon.jpg` | 滿月 |
 | `03-crawl.jpg` | 爬行 |
 | `04-first-words.jpg` | 第一次叫爸媽 |
-| `05-age-2.jpg` | 兩歲 |
-| `06-age-3.jpg` | 三歲 |
+| `05-age-1.jpg` | 一歲生日（2025/3/7） |
+| `06-age-2.jpg` | 兩歲生日（2026/3/7） |
 
 可在 `index.html` 的時間軸區塊修改日期、標題與內文，並增減 `<article class="timeline-item">` 項目。
 
@@ -120,7 +120,7 @@ npx --yes serve .
 3. 網址會是：  
    `https://<你的帳號>.github.io/<repo名稱>/`
 
-### 首次推送範例
+### 首次推送範例（務必推送整個資料夾）
 
 ```bash
 cd "c:\Users\User\OneDrive\文件\Cursor專案\lele-growth"
@@ -131,6 +131,14 @@ git branch -M main
 git remote add origin https://github.com/<你的帳號>/lele-growth.git
 git push -u origin main
 ```
+
+**重要：** 除了 `index.html`，還必須一併推送 `css/`、`js/`、`images/` 資料夾。若 GitHub 上只有 `index.html`，網站會沒有樣式、留言板也無法運作。
+
+### GitHub Pages 留言板授權網域
+
+部署後若留言在本機正常、線上失敗，請到 Firebase Console → **專案設定** → **已授權的網域**，新增：
+
+`l80623-gloomy.github.io`
 
 ---
 
